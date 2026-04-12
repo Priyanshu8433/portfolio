@@ -77,8 +77,7 @@ const projects = [
     year: 2026,
     description: "Real-time collaboration platform",
     image: "/priyanshu-glasses.jpg",
-    github: "",
-    url: "1234",
+    github: "https://github.com/Priyanshu8433/rtc-board",
   },
   {
     id: 2,
@@ -87,7 +86,8 @@ const projects = [
     year: 2025,
     description: "Collection of AI-powered tools",
     image: "/priyanshu-glasses.jpg",
-    github: "",
+    github: "https://github.com/Priyanshu8433/aivory",
+    url: "https://aivory-two.vercel.app/",
   },
   {
     id: 3,
@@ -96,7 +96,8 @@ const projects = [
     subtitle: "Chat application",
     description: "Real-time Chat Application",
     image: "/chatly-image.jpg",
-    github: "",
+    github: "https://github.com/Priyanshu8433/chat.ly",
+    url: "https://chat-ly-sigma.vercel.app/",
   },
   {
     id: 4,
@@ -105,14 +106,13 @@ const projects = [
     year: 2024,
     description: "(Frontend-only) Mobile app for women safety",
     image: "/priyanshu-glasses.jpg",
-    github: "",
-    url: "242",
+    github: "https://github.com/Priyanshu8433/herness",
   },
 ];
 
 export const Projects = () => {
   return (
-    <section className="px-6 py-12 md:px-10 md:py-32 ">
+    <section id="projects" className="px-6 py-12 md:px-10 md:py-32 ">
       <div className="border-l-4 border-primary pl-8 py-2">
         <h2 className="mb-2 md:mb-6 text-5xl md:text-7xl xl:text-8xl font-black leading-10 sm:leading-12 md:leading-16 xl:leading-18 tracking-tight uppercase lg:mx-auto">
           What I’m Building

@@ -5,7 +5,7 @@ import { Button } from "./button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const NavLinks = ["Experience", "Projects", "Skills", "Contact"];
+const NavLinks = ["Experience", "Projects", "Skills", "Expertise", "Contact"];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,21 +23,41 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed left-0 top-0 z-50 bg-[rgba(10,10,10,0.7)] backdrop-blur-md w-full h-24 flex justify-between items-center px-6 md:px-12">
-      <span className="text-[32px] font-black text-white uppercase hover:text-primary transition-all duration-300">
+      <button
+        className="text-[32px] font-black text-white uppercase hover:text-primary transition-all duration-300"
+        onClick={() => {
+          setIsOpen(false);
+          setTimeout(() => {
+            document
+              .getElementById("hero")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }, 150);
+        }}
+      >
         The Curator
-      </span>
+      </button>
       <div className="hidden lg:flex lg:gap-12">
         {NavLinks.map((link) => (
-          <Link
+          <button
             key={link}
-            href="#"
+            onClick={() => {
+              document
+                .getElementById(link.toLowerCase())
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
             className="text-white/70 font-sans text-base font-black uppercase hover:text-white hover:translate-y-[-2px] transition-all duration-300 cursor-pointer"
           >
             {link}
-          </Link>
+          </button>
         ))}
       </div>
-      <Button className="hover:scale-105 hidden lg:block">Read.cv</Button>
+      <Link
+        href="https://drive.google.com/file/d/1OTIa3j5uk_e1YGTXxCCU46gnGU95fOW7/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button className="hover:scale-105 hidden lg:block">Read.cv</Button>
+      </Link>
 
       <div
         className="lg:hidden"
@@ -60,16 +80,20 @@ export const Navbar = () => {
             className="absolute top-8 right-6"
           />
           {NavLinks.map((link) => (
-            <Link
+            <button
               key={link}
-              href="#"
               onClick={() => {
                 setIsOpen(false);
+                setTimeout(() => {
+                  document
+                    .getElementById(link.toLowerCase())
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }, 150);
               }}
               className="text-white/70 font-sans text-4xl font-black uppercase hover:text-white hover:translate-y-[-2px] transition-all duration-300 cursor-pointer"
             >
               {link}
-            </Link>
+            </button>
           ))}
         </div>
       </div>

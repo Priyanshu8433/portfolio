@@ -39,6 +39,9 @@ const sourceSerif4 = Source_Serif_4({
 export const metadata: Metadata = {
   title: "The Curator | Priyanshu Singh",
   description: "High-End Editorial Portfolio",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -49,9 +52,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${spaceGrotesk.variable} ${poppins.variable} ${notoSerif.variable} ${sourceSerif4.variable} h-full antialiased`}
+      className={`${inter.variable} ${spaceGrotesk.variable} ${poppins.variable} ${notoSerif.variable} ${sourceSerif4.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-surface text-on-surface relative cursor-none">
+      <body className="min-h-full flex flex-col font-sans bg-surface text-on-surface relative">
         <CustomCursor />
         <div className="grain-overlay"></div>
         <main className="relative z-10 flex-1 flex flex-col">

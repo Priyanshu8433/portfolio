@@ -6,7 +6,7 @@ interface ExpertiseCardProps {
 
 const ExpertiseCard = ({ idx, title, description }: ExpertiseCardProps) => {
   return (
-    <div className="group bg-surface-container-low hover:bg-primary hover:text-black transition-all duration-300 aspect-square p-4 md:px-8 md:p-12 flex justify-center items-center max-w-sm">
+    <div className="group bg-surface hover:bg-primary hover:text-black transition-all duration-300 aspect-square p-4 md:px-8 md:p-12 flex justify-center items-center max-w-sm">
       <div>
         <div className="text-3xl md:text-4xl xl:text-3xl 2xl:text-4xl 3xl:leading-12 leading-8 tracking-tight font-black mb-4">
           <span>{`0${idx + 1}`}</span>
@@ -43,7 +43,7 @@ const expertise = [
 
 export const Expertise = () => {
   return (
-    <section className="px-6 py-12 md:px-10 md:py-32 bg-black border-b border-outline-variant/30">
+    <section id="expertise" className="px-6 py-12 md:px-10 md:py-32 bg-black border-b border-outline-variant/30">
       <div className="w-full mb-8 md:mb-12 lg:mb-16 text-brand-neutral-dim ">
         <h2 className="text-5xl md:text-7xl xl:text-8xl font-black leading-10 sm:leading-12 md:leading-16 xl:leading-18 tracking-tight uppercase lg:mx-auto ">
           Core Expertise

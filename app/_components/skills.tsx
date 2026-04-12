@@ -23,7 +23,7 @@ interface SkillCardProps {
 }
 const SkillCard = ({ type, list }: SkillCardProps) => {
   return (
-    <div>
+    <div className="selection:bg-brand-neutral selection:text-brand-secondary">
       <div className="px-2 lg:px-3 lg:py-2 border-l-4 w-fit border-brand-neutral flex items-center mb-2 lg:mb-4">
         <span className="text-2xl md:text-3xl lg:text-4xl font-noto-serif font-black leading-10 uppercase">
           {type}
@@ -47,7 +47,7 @@ const SkillCard = ({ type, list }: SkillCardProps) => {
 
 export const Skills = () => {
   return (
-    <section className="px-6 py-12 md:px-10 md:py-32 bg-primary text-black">
+    <section id="skills" className="px-6 py-12 md:px-10 md:py-32 bg-primary text-black selection:bg-brand-neutral selection:text-brand-secondary">
       <div className="w-full mb-8 md:mb-12 lg:mb-16">
         <h2 className="text-5xl md:text-7xl xl:text-8xl font-black leading-10 sm:leading-12 md:leading-16 xl:leading-18 tracking-tight uppercase lg:mx-auto">
           Tech Stack

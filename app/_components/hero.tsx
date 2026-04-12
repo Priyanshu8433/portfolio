@@ -1,6 +1,7 @@
+"use client";
+
 import { ArrowDown } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 const info = {
   role: "Software Engineer",
@@ -12,7 +13,16 @@ const info = {
 
 const ExploreButton = () => {
   return (
-    <div className="group w-fit flex items-center justify-center gap-4 hover:translate-y-[-4px] duration-300 p-2 mx-auto lg:mx-0">
+    <div
+      className="group w-fit flex items-center justify-center gap-4 hover:translate-y-[-4px] duration-300 p-2 mx-auto lg:mx-0"
+      onClick={() => {
+        setTimeout(() => {
+          document
+            .getElementById("experience")
+            ?.scrollIntoView({ behavior: "smooth" });
+        }, 150);
+      }}
+    >
       <button className="group-hover:bg-brand-neutral-dim/80 transition-all duration-300 border-2 border-brand-secondary/60 group-hover:border-brand-neutral-dim/80 h-12 w-12 lg:h-16 lg:w-16 flex justify-center items-center">
         <ArrowDown className="group-hover:text-brand-primary transition-all duration-300 text-brand-secondary/60 animate-osci" />
       </button>
@@ -25,10 +35,13 @@ const ExploreButton = () => {
 
 export const Hero = () => {
   return (
-    <div className="relative h-screen w-full flex flex-col justify-center mx-auto lg:items-baseline bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,var(--color-primary-fixed-dim)_90%)] overflow-hidden">
+    <div
+      id="hero"
+      className="relative h-screen w-full flex flex-col justify-center mx-auto lg:items-baseline bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,var(--color-primary-fixed-dim)_90%)] overflow-hidden"
+    >
       <div className="absolute right-0 top-0 h-full w-full lg:w-[60%]">
         <Image
-          src="/priyanshu-glasses.png"
+          src="/priyanshu-glasses.jpg"
           alt="Hero"
           fill
           className="lg:object-cover lg:object-left object-cover"
