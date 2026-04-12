@@ -1,19 +1,19 @@
 const skills = [
   {
     type: "Languages",
-    list: ["JavaScript", "TypeScript", "Python", "C++", "Java"],
+    list: ["JavaScript", "TypeScript", "Python", "C++", "C"],
   },
   {
     type: "Frameworks",
-    list: ["React", "NextJS", "NodeJS", "ExpressJS", "FastAPI"],
+    list: ["React", "NextJS", "NodeJS", "ExpressJS"],
   },
   {
     type: "Databases",
-    list: ["MongoDB", "PostgreSQL", "MySQL", "SQLite"],
+    list: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"],
   },
   {
     type: "Tools",
-    list: ["Git", "Docker", "Kubernetes", "AWS", "GCP"],
+    list: ["Git", "Docker", "Postman"],
   },
 ];
 

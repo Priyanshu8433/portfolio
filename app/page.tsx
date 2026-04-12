@@ -1,4 +1,5 @@
 import { Experience } from "./_components/experience";
+import { Expertise } from "./_components/expertise";
 import { Hero } from "./_components/hero";
 import { Projects } from "./_components/projects";
 import { Skills } from "./_components/skills";
@@ -10,6 +11,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Skills />
+      <Expertise />
     </div>
   );
 }
