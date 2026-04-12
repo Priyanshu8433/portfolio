@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk, Poppins, Noto_Serif, Source_Serif_4 } from "next/font/google";
+import {
+  Inter,
+  Space_Grotesk,
+  Poppins,
+  Noto_Serif,
+  Source_Serif_4,
+} from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
+import { CustomCursor } from "@/components/custom-cursor";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,7 +37,7 @@ const sourceSerif4 = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "The Kinetic Curator",
+  title: "The Kinetic Curator | Priyanshu Singh",
   description: "High-End Editorial Portfolio",
 };
 
@@ -44,7 +51,8 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${spaceGrotesk.variable} ${poppins.variable} ${notoSerif.variable} ${sourceSerif4.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-surface text-on-surface">
+      <body className="min-h-full flex flex-col font-sans bg-surface text-on-surface relative cursor-none">
+        <CustomCursor />
         <div className="grain-overlay"></div>
         <main className="relative z-10 flex-1 flex flex-col">
           <Navbar />

@@ -1,5 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const info = {
   role: "Software Engineer",
@@ -11,10 +12,10 @@ const info = {
 
 const ExploreButton = () => {
   return (
-    <div className="group w-fit flex items-center justify-center gap-4 hover:cursor-pointer hover:translate-y-[-4px] duration-300 p-2 mx-auto lg:mx-0">
-      <div className="group-hover:bg-brand-neutral-dim/80 transition-all duration-300 border-2 border-brand-secondary/60 h-12 w-12 lg:h-16 lg:w-16 flex justify-center items-center">
+    <div className="group w-fit flex items-center justify-center gap-4 hover:translate-y-[-4px] duration-300 p-2 mx-auto lg:mx-0">
+      <button className="group-hover:bg-brand-neutral-dim/80 transition-all duration-300 border-2 border-brand-secondary/60 group-hover:border-brand-neutral-dim/80 h-12 w-12 lg:h-16 lg:w-16 flex justify-center items-center">
         <ArrowDown className="group-hover:text-brand-primary transition-all duration-300 text-brand-secondary/60 animate-osci" />
-      </div>
+      </button>
       <span className="text-sm lg:text-base text-brand-secondary/90 font-noto-serif font-bold tracking-widest">
         Explore Portfolio
       </span>
