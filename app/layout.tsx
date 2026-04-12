@@ -37,7 +37,7 @@ const sourceSerif4 = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "The Kinetic Curator | Priyanshu Singh",
+  title: "The Curator | Priyanshu Singh",
   description: "High-End Editorial Portfolio",
 };
 
