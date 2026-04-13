@@ -34,9 +34,10 @@ export const Navbar = () => {
           }, 150);
         }}
       >
-        The Curator
+        Priyanshu <span className="hidden xl:inline">Singh</span>
       </button>
-      <div className="hidden lg:flex lg:gap-12">
+
+      <div className="hidden lg:flex md:gap-8 xl:gap-12">
         {NavLinks.map((link) => (
           <button
             key={link}
@@ -51,6 +52,7 @@ export const Navbar = () => {
           </button>
         ))}
       </div>
+
       <Link
         href="https://drive.google.com/file/d/1OTIa3j5uk_e1YGTXxCCU46gnGU95fOW7/view?usp=sharing"
         target="_blank"

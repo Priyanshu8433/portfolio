@@ -43,7 +43,10 @@ const expertise = [
 
 export const Expertise = () => {
   return (
-    <section id="expertise" className="px-6 py-12 md:px-10 md:py-32 bg-black border-b border-outline-variant/30">
+    <section
+      id="expertise"
+      className="px-6 py-24 md:px-10 md:py-32 bg-black border-b border-outline-variant/30"
+    >
       <div className="w-full mb-8 md:mb-12 lg:mb-16 text-brand-neutral-dim ">
         <h2 className="text-5xl md:text-7xl xl:text-8xl font-black leading-10 sm:leading-12 md:leading-16 xl:leading-18 tracking-tight uppercase lg:mx-auto ">
           Core Expertise

@@ -47,7 +47,10 @@ const SkillCard = ({ type, list }: SkillCardProps) => {
 
 export const Skills = () => {
   return (
-    <section id="skills" className="px-6 py-12 md:px-10 md:py-32 bg-primary text-black selection:bg-brand-neutral selection:text-brand-secondary">
+    <section
+      id="skills"
+      className="px-6 py-24 md:px-10 md:py-32 bg-primary text-black selection:bg-brand-neutral selection:text-brand-secondary"
+    >
       <div className="w-full mb-8 md:mb-12 lg:mb-16">
         <h2 className="text-5xl md:text-7xl xl:text-8xl font-black leading-10 sm:leading-12 md:leading-16 xl:leading-18 tracking-tight uppercase lg:mx-auto">
           Tech Stack

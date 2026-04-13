@@ -60,8 +60,7 @@ const ExperienceCard = ({
 const experiences = [
   {
     role: "Software Engineer",
-    description:
-      "Building scalable digital products with a focus on performance, usability, and clean architecture. Turning complex ideas into efficient, production-ready solutions in fast-paced environments.",
+    description: "",
     company: "PayPal",
     from: "Upcoming",
     to: "∞",
@@ -85,7 +84,10 @@ const experiences = [
 
 export const Experience = () => {
   return (
-    <section id="experience" className="px-6 py-12 md:px-10 md:py-32 flex flex-col xl:flex-row xl:gap-22 border-b border-outline-variant/30">
+    <section
+      id="experience"
+      className="px-6 py-24 md:px-10 md:py-32 flex flex-col xl:flex-row xl:gap-22 border-b border-outline-variant/30"
+    >
       <div className="w-full xl:w-2/5">
         <h2 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black leading-10 sm:leading-12 md:leading-16 xl:leading-18 tracking-tight uppercase lg:mx-auto">
           Professional <br />

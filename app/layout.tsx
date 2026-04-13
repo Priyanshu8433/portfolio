@@ -37,7 +37,7 @@ const sourceSerif4 = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "The Curator | Priyanshu Singh",
+  title: "Priyanshu Singh",
   description: "High-End Editorial Portfolio",
   icons: {
     icon: "/favicon.ico",

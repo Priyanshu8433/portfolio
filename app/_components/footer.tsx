@@ -25,7 +25,7 @@ export const Footer = () => {
     >
       <div className="flex flex-col gap-2 md:gap-4 uppercase mb-8 md:mb-0">
         <span className="text-[20px] font-bold leading-7 font-noto-serif">
-          The Curator
+          Priyanshu Singh
         </span>
         <span className="text-brand-neutral-dim text-sm leading-5 tracking-wide font-noto-serif">
           © {new Date().getFullYear()} Priyanshu. ALL RIGHTS RESERVED.

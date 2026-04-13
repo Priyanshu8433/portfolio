@@ -112,7 +112,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="px-6 py-12 md:px-10 md:py-32 ">
+    <section id="projects" className="px-6 py-24 md:px-10 md:py-32 ">
       <div className="border-l-4 border-primary pl-8 py-2">
         <h2 className="mb-2 md:mb-6 text-5xl md:text-7xl xl:text-8xl font-black leading-10 sm:leading-12 md:leading-16 xl:leading-18 tracking-tight uppercase lg:mx-auto">
           What I’m Building
