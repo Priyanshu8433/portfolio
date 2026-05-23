@@ -97,6 +97,15 @@ export const Navbar = () => {
               {link}
             </button>
           ))}
+          <Link
+            href="https://drive.google.com/file/d/1OTIa3j5uk_e1YGTXxCCU46gnGU95fOW7/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="text-lg px-8 font-medium uppercase">
+              Read.cv
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>
