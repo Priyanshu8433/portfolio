@@ -21,7 +21,7 @@ export const Footer = () => {
   return (
     <footer
       id="contact"
-      className="px-6 py-12 md:px-10 md:py-32 bg-surface border-b border-outline-variant/30 flex flex-col text-center md:text-start md:flex-row justify-between"
+      className="px-6 py-24 md:px-10 md:py-32 bg-surface border-b border-outline-variant/30 flex flex-col text-center md:text-start md:flex-row justify-between"
     >
       <div className="flex flex-col gap-2 md:gap-4 uppercase mb-8 md:mb-0">
         <span className="text-[20px] font-bold leading-7 font-noto-serif">

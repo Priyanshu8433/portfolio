@@ -41,7 +41,7 @@ export const Hero = () => {
     >
       <div className="absolute right-0 top-0 h-full w-full lg:w-[60%]">
         <Image
-          src="/priyanshu-glasses.jpg"
+          src="/priyanshu.png"
           alt="Hero"
           fill
           className="lg:object-cover lg:object-left object-cover"
