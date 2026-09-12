@@ -13,7 +13,7 @@ const links = [
   },
   {
     title: "Read.cv",
-    href: "https://drive.google.com/file/d/1OTIa3j5uk_e1YGTXxCCU46gnGU95fOW7/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1GB3Ev5SlElOgc_0F5SudmYdnF7y3DDCP/view?usp=sharing",
   },
 ];
 

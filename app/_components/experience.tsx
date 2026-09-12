@@ -32,7 +32,7 @@ const ExperienceCard = ({
       </div>
 
       <div className="flex-1">
-        <div className="relative mb-1 gap-2">
+        <div className="relative mb-2 gap-2">
           <span className="block text-sm md:text-base font-noto-serif font-medium tracking-widest uppercase text-brand-secondary/40  max-w-1/2">
             {company}
           </span>
@@ -46,10 +46,10 @@ const ExperienceCard = ({
             {from} — {to}
           </span>
         </div>
-        <h3 className="mb-2 md:mb-4 text-3xl md:text-5xl font-black leading-8 md:leading-12 tracking-normal uppercase max-w-2xl group-hover:text-primary transition-all duration-300">
+        <h3 className="mb-4 md:mb-4 text-3xl md:text-5xl font-black leading-8 md:leading-12 tracking-normal uppercase max-w-2xl group-hover:text-primary transition-all duration-300">
           {role}
         </h3>
-        <p className="font-noto-serif leading-6.5 text-brand-neutral-dim">
+        <p className="font-noto-serif leading-6.5 text-brand-neutral-dim text-justify">
           {description}
         </p>
       </div>
@@ -60,10 +60,11 @@ const ExperienceCard = ({
 const experiences = [
   {
     role: "Software Engineer",
-    description: "",
+    description:
+      "Worked on PayPal’s Billing & Subscription Platform, building production systems for incident triage, deployment automation, and merchant migrations. Developed AI-powered developer tooling and automation that improved operational efficiency across production services.",
     company: "PayPal",
-    from: "Upcoming",
-    to: "∞",
+    from: "Jun 2026",
+    to: "Aug 2026",
   },
   {
     role: "Software Development Engineer",

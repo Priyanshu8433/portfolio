@@ -25,7 +25,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div className="group w-full aspect-4/5 odd:mb-0 md:odd:mb-10 xl:odd:mb-20 even:mt-0 md:even:mt-10 xl:even:mt-20 flex flex-col gap-2 md:gap-5 lg:gap-6 relative">
-      <div className="absolute top-5 right-5 z-9 flex gap-3 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-300">
+      <div className="absolute top-5 right-5 z-9 flex gap-3 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-300 bg-black/30 rounded px-2">
         <Link
           href={github}
           className="p-1 border-b-2 border-transparent hover:border-brand-secondary"
@@ -43,7 +43,7 @@ const ProjectCard = ({
       </div>
 
       <div className="relative flex-9/10 overflow-hidden">
-        <div className="absolute bottom-0 left-0 z-9 px-3 pb-6 pt-12 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0.3),rgba(0,0,0,0))] w-full font-noto-serif text-brand-secondary tracking-wide opacity-0 lg:group-hover:opacity-100 transition-all duration-300">
+        <div className="absolute bottom-0 left-0 z-9 px-3 pb-6 pt-12 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0.3),rgba(0,0,0,0))] w-full font-noto-serif text-brand-secondary tracking-wide opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-300">
           {description}
         </div>
         <motion.img
